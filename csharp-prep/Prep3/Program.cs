@@ -26,7 +26,7 @@ class Program
             {
                 Console.WriteLine("Lower");
             }
-            else
+            else 
             {
                 Console.WriteLine($"You are right!, it took {guessTime} time to guess.");
                 Console.Write("Do you want to continue? ");
@@ -37,10 +37,7 @@ class Program
                                     /* If i don't use Main(args) I will but use break instead and remove else statement underneat, it will 
                     still the same Random number and keep continue count the old gessTime plus the new gessing time  */                  
                 }
-                else
-                {
-                    break;          
-                }
+        break;
             }
         }    
     }
