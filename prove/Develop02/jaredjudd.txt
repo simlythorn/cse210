@@ -1,0 +1,2 @@
+Tacoma, Washington, USA / Cloudy with a little wind. It's warm, but not hot. 
+6/18/2023 2:23:32 AM~~What did you learn today?~~I review precalculus to prepare for calculus class. So I reviewed a lot of Trigonometry (sin, cos, tan, csc, sec) and different graphs y=x^3, even, odd functions, and other graphs like y=e^x, y=ln x, etc. Right now, the course is reviewing Composition of Functions (g(f(x)) = f(x) --> g(f(x))
