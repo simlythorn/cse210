@@ -48,11 +48,13 @@ public class Journal
                 continue;
             }
             
-            DateTime date = DateTime.Parse(fields[0]);
-            string promptText = fields[1];
-            string entryText = fields[2];
-            string entryLocation = fields[3];
-            string entryWeather = fields[4];
+            //DateTime date = DateTime.Parse(fields[0]);
+            string date = fields[0];
+            string entryLocation = fields[1];
+            string entryWeather = fields[2];
+            string promptText = fields[3];
+            string entryText = fields[4];
+            
 
             // Create a new Entry object
             Entry newEntry = new Entry(date, promptText, entryText, entryLocation, entryWeather);

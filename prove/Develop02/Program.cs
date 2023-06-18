@@ -20,14 +20,16 @@ class Program
             choice = Console.ReadLine();
             if (choice == "1")
             {
-                string prompt = promptGenerator.GetRandomPrompt();
-                Console.WriteLine(prompt);
-                string entryText = Console.ReadLine();
+                Console.Write("Date: ");
+                string date = Console.ReadLine();
                 Console.Write("Enter your location: ");
                 string entryLocation = Console.ReadLine();
                 Console.Write("Enter the weather: ");
                 string entryWeather = Console.ReadLine();
-                Entry newEntry = new Entry(DateTime.Now, prompt, entryText, entryLocation, entryWeather);
+                string prompt = promptGenerator.GetRandomPrompt();
+                Console.WriteLine(prompt);
+                string entryText = Console.ReadLine();
+                Entry newEntry = new Entry(date, prompt, entryText, entryLocation, entryWeather);
                 theJournal.AddEntry(newEntry);
             }
             else if (choice == "2")

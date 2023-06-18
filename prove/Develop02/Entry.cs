@@ -2,12 +2,13 @@ using System;
 
 public class Entry
 {
-    public DateTime _date;
+    //public DateTime _date;
+    public string _date;
     public string _promptText;
     public string _entryText;
     public string _entryLocation;
     public string _entryWeather;
-    public Entry(DateTime dateText, string promptText, string entryText, string entryLocation, string entryWeather)
+    public Entry(string dateText, string promptText, string entryText, string entryLocation, string entryWeather)
     {
         _date = dateText;
         _promptText = promptText;
@@ -17,10 +18,10 @@ public class Entry
     }
     public void Display()
     {
-        Console.WriteLine($"{_date} - {_promptText}");
-        Console.WriteLine(_entryText);
-        Console.WriteLine(_entryLocation);
-        Console.WriteLine(_entryWeather);
+        Console.WriteLine($"Date: {_date} - Prompt: {_promptText}");
+        Console.WriteLine($"Location: {_entryLocation}");
+        Console.WriteLine($"Weather: {_entryWeather}");
+        Console.WriteLine($"Text: {_entryText}");
     }
 }
 
