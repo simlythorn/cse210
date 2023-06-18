@@ -44,7 +44,6 @@ public class Journal
             // Check if the line has the expected number of fields
             if (fields.Length > 0)
             {
-                // Handle the error, e.g., by logging it or throwing an exception
                 Console.WriteLine($"{line}");
                 continue;
             }
