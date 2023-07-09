@@ -33,6 +33,7 @@ public class Journal
         }
         Console.WriteLine("\n");
     }
+
     public void LoadFromFile(string filename)
     {
         string[] lines = System.IO.File.ReadAllLines(filename);
@@ -61,5 +62,7 @@ public class Journal
             _entries.Add(newEntry);
         }
     }
+ 
+
 }
 

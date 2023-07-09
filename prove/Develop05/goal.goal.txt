@@ -1,0 +1,6 @@
+SimpleGoal
+,aaaaaaaa,bbbbbbbbbbb,100,False
+EternalGoal
+,rrrrrrrrrr,tttttttttttttt,50
+ChecklistGoal
+,ssssssssss,yyyyyyyyyyyyyyy,50,3,500
