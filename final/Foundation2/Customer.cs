@@ -1,11 +1,11 @@
 using System;
 public class Customer
 {
-    private string _name;
-    private Address _address;
-    public Customer( string name, Address address)
+    public string _customerName;
+    public Address _address;
+    public Customer( string customerName, Address address)
     {
-        _name = name;
+        _customerName = customerName;
         _address = address;
     }
 
