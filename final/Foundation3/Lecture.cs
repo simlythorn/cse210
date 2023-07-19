@@ -1,5 +1,3 @@
-using System;
-
 public class Lecture : Event
 {
     private string _speaker;
@@ -12,18 +10,14 @@ public class Lecture : Event
         _capacity = capacity;
     }
 
-    public  string GetFullDetails()
+    public override string GetFullDetails()
     {
-        return $"{_eventTitle}\n{_description}\n{_date} at {_time}\n{_address._street}, {_address._city}, {_address._zipcode}\nSpeaker: {_speaker}\nCapacity: {_capacity}";
+        return $"Title: {_eventTitle}\nDescription: {_description}\nDate and Time: {_date} at {_time}\nLocation: {_address._street}, {_address._city}, {_address._zipcode}\nSpeaker: {_speaker}\nCapacity: {_capacity}";
 
     }
 
-    public string GetShortDescription()
+    public override string GetShortDescription()
     {
         return $"Lecture: {_eventTitle} on {_date}";
     }
-
-    
-
-
 }

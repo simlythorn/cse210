@@ -15,16 +15,16 @@ public class Event
         _address = address;
     }
 
-    public string GetStandardDetails()
+    public virtual string GetStandardDetails()
     {
         return $"{_eventTitle}\n{_description}\n{_date} at {_time}\n{_address._street}, {_address._city}, {_address._zipcode}";
     }
-    public string GetFullDetails()
+    public virtual string GetFullDetails()
     {
         return GetStandardDetails();
     }
 
-    public string GetShortDescription()
+    public virtual string GetShortDescription()
     {
         return $"{_eventTitle} on {_date}";
     }

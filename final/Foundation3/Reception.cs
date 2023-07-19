@@ -7,14 +7,15 @@ public class Reception : Event
         _RsvpEmail = RsvpEmail;
     }
 
-    public  string GetFullDetails()
+    public override string GetFullDetails()
     {
         return base.GetFullDetails() + $"\nRSVP to: {_RsvpEmail}";
     }
 
-    public string GetShortDescription()
+    public override string GetShortDescription()
     {
         return $"Reception: " + base.GetShortDescription();
     }
-    
+
 }
+

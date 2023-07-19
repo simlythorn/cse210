@@ -1,4 +1,5 @@
 using System;
+
 public class OutdoorGathering : Event
 {
     private string _weather;
@@ -6,13 +7,11 @@ public class OutdoorGathering : Event
     {
         _weather = weather;
     }
-
-    public string GetFullDetails()
+    public override string GetFullDetails()
     {
         return base.GetFullDetails() + $"\nWeather Forecast: {_weather}";
     }
-
-    public string GetShortDescription()
+    public override string GetShortDescription()
     {
         return $"Outdoor Gathering: " + base.GetShortDescription();
     }
